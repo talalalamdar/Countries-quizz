@@ -1,14 +1,129 @@
-body {
+body,
+html {
+  width: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.main {
+  background-image: url("./assets/world-map.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.filter-div {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-div {
+  width: 80%;
+}
+
+.leader-board-div {
+  width: 80%;
+}
+
+.questions-div {
+  width: 80%;
+}
+
+.button {
+  padding: 10px 40px;
+  margin: 30px;
+  font-weight: bolder !important;
+  background-color: white;
+  border: 3px solid darkBlue;
+  color: darkblue;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s, box-shadow .5s;
+}
+
+.button:hover {
+  background-color: darkblue;
+  color: white;
+  box-shadow: 0 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+.answer-div {
+  width: 40%;
+  background-color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 3px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.answer-div:hover {
+  font-weight: 600;
+  background-color: aliceblue;
+}
+
+.reset-button {
+  padding: 10px 40px;
+  margin: 30px;
+  font-weight: bolder !important;
+  background-color: white;
+  border: 3px solid rgb(199, 37, 37);
+  color: rgb(199, 37, 37);
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s, box-shadow .5s;
+}
+
+.reset-button:hover {
+  background-color: rgb(199, 37, 37);
+  color: white;
+  box-shadow: 0 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+.leader-board-table {
+  max-height: 500px !important;
+  width: 100%;
+  overflow: scroll;
+}
+
+@media only screen and (min-width: 750px) {
+  .intro-div {
+    width: 50%;
+  }
+  
+  .leader-board-div {
+    width: 50%;
+  }
+  
+  .questions-div {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .intro-div {
+    width: 30%;
+  }
+  
+  .leader-board-div {
+    width: 30%;
+  }
+  
+  .questions-div {
+    width: 30%;
+  }
 }
