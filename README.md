@@ -1,3 +1,7 @@
+Simple countries quiz with 10 static questions and leaderboard scores saved to the local storage in the browser.
+Built using HTML, CSS, JavaScript and React
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
