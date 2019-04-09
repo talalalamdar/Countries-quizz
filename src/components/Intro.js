@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { FaTrophy, FaPlay } from 'react-icons/lib/fa'
+import { FaTrophy, FaPlay, FaGlobe } from 'react-icons/lib/fa'
 
 
 class Intro extends React.Component {
@@ -20,6 +20,7 @@ class Intro extends React.Component {
         const { playerName } = this.state
         return (
             <div className='intro-div' style={styles.introFormDiv}>
+                <h3 style={{color: 'darkblue'}}>Countries Quiz <FaGlobe /></h3><br/>
                 <form onSubmit={this.handleSubmit}>
                     <input type='text' placeholder='Enter your player name...'
                         value={playerName}
